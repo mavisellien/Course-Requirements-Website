@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Registration</title>
+    <style>
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Register</h1>
+<div th:if="${error}" class="error-message">
+    <p th:text="${error}"></p>
+</div>
+<form th:action="@{/register}" method="post">
+    <div>
+        <label>Username:</label>
+        <input type="text" name="username" required>
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+    </div>
+    <div>
+        <label>Role:</label>
+        <select name="role" required>
+            <option value="COMP">Computer Science</option>
+            <option value="BIOT">Biotechnology</option>
+            <option value="SBM">School of Business Management</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
+<p>Already have an account? <a th:href="@{/login}">Login here</a></p>
+</body>
+</html>

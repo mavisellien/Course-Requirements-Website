@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome Home!</h1>
+
+<p sec:authorize="hasRole('COMP')">
+    <a th:href="@{/comp}">Go to Computer Science Page</a>
+</p>
+<p sec:authorize="hasRole('BIOT')">
+    <a th:href="@{/biot}">Go to Biotechnology Page</a>
+</p>
+<p sec:authorize="hasRole('SBM')">
+    <a th:href="@{/sbm}">Go to School of Business Management Page</a>
+</p>
+
+<a href="/login">Logout</a>
+</body>
+</html>
