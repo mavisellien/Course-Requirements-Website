@@ -12,6 +12,17 @@ A website where students can see the graduation requirements for their major in 
 The code uses the following and may require specific configurations:
 - JDK 22.02
 - Maven
-- pom.xml with the following dependencies: spring-boot-devtools, spring-boot-starter-security, spring-boot-starter-data-jpa, mysql-connector-j, spring-boot-starter-thymeleaf, spring-boot-starter-web, thymeleaf-extras-springsecurity6
+- pom.xml with the following dependencies:
+  * spring-boot-devtools
+  * spring-boot-starter-security
+  * spring-boot-starter-data-jpa
+  * mysql-connector-j
+  * spring-boot-starter-thymeleaf
+  * spring-boot-starter-web
+  * thymeleaf-extras-springsecurity6
+  * spring-boot-starter-test
+  * spring-security-test
 - MySQL (to be able to use MySQL, please change the username and password in the application.properties file according to your own configuration)
 
+If you come across any error during the process, feel free to comment.
+If you come across an area you wish to improve, feel free to comment.
