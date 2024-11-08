@@ -25,4 +25,5 @@ The code uses the following and may require specific configurations:
 - MySQL (to be able to use MySQL, please change the username and password in the application.properties file according to your own configuration)
 
 If you come across any error during the process, feel free to comment.
+
 If you come across an area you wish to improve, feel free to comment.
